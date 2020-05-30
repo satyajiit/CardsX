@@ -39,11 +39,11 @@ Developed for #30DaysOfKotlin 💖
 
 <img src="/Screenshots/1.png" height="512" width="256" />
 <img src="/Screenshots/2.png" height="512" width="256" />&nbsp;<br><br><br>
-<img src="/Screenshots/3.png" height="512" width="512" />
-<img src="/Screenshots/4.png" height="512" width="512" />&nbsp; <br><br><br>
-<img src="/Screenshots/5.png" height="512" width="512"/>
-<img src="/Screenshots/6.png" height="512" width="512" />&nbsp;<br><br><br>
-<img src="/Screenshots/8.png" height="512" width="512" />
+<img src="/Screenshots/3.png" height="512" width="256" />
+<img src="/Screenshots/4.png" height="512" width="256" />&nbsp; <br><br><br>
+<img src="/Screenshots/5.png" height="512" width="256"/>
+<img src="/Screenshots/6.png" height="512" width="256" />&nbsp;<br><br><br>
+<img src="/Screenshots/8.png" height="512" width="256" />
 
 ### Code Quality : 8/10
 
