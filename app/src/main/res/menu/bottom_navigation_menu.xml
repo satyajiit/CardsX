@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_tracker"
+        android:enabled="true"
+        android:orderInCategory="1"
+        android:icon="@drawable/nav_item_tracker"
+        android:title="@string/nav_tracker"/>
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:enabled="true"
+        android:orderInCategory="2"
+        android:icon="@drawable/nav_item_wallet"
+        android:title="@string/nav_wallet"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:enabled="true"
+        android:orderInCategory="3"
+        android:icon="@drawable/nav_item_profile"
+        android:title="@string/nav_profile"/>
+
+
+</menu>

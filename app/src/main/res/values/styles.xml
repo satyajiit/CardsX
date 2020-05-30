@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/louis</item>
+        <item name="android:fontFamily">@font/louis</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <!--the key attribute for fullscreen dialog -->
+        <item name="android:windowIsFloating">false</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- only width fill screen -->
+        <!--<item name="android:windowMinWidthMajor">100%</item>-->
+        <!--<item name="android:windowMinWidthMinor">100%</item>-->
+
+    </style>
+
+    <style name="AppTheme.fullscreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="fontFamily">@font/louis</item>
+
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="slide_dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+
+</resources>

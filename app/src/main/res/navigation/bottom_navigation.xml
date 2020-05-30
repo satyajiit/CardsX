@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation.xml"
+    app:startDestination="@id/nav_wallet">
+
+    <fragment
+        android:id="@+id/nav_tracker"
+        android:name="com.argonlabs.cardsx.ui.fragments.TrackerFragment"
+        android:label="fragment_tracker"
+        tools:layout="@layout/fragment_tracker" />
+    <fragment
+        android:id="@+id/nav_wallet"
+        android:name="com.argonlabs.cardsx.ui.fragments.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.argonlabs.cardsx.ui.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

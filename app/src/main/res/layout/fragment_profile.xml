@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.TrackerFragment">
+
+
+
+    <RelativeLayout
+        android:id="@+id/bgTop"
+        android:background="@drawable/btm_rounded_edge"
+        android:layout_width="match_parent"
+        android:layout_height="248dp">
+
+        <View
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tracker_rpt"/>
+
+        <ImageView
+            android:id="@+id/clouds"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/clouds"/>
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/sj"
+                app:civ_border_width="0.6dp"
+                app:civ_border_color="#FFFF"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/usernameTv"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satyajit Pradhan"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/bgTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardUseCompatPadding="true"
+        android:id="@+id/shareCard"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp"
+        android:layout_marginStart="@dimen/padding_5dp"
+        android:layout_marginEnd="@dimen/padding_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/padding_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/ic_assistant"
+                android:id="@+id/logImage1"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_toEndOf="@id/logImage1"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_app"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/rateUsCard"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp"
+        android:layout_marginStart="@dimen/padding_5dp"
+        android:layout_marginEnd="@dimen/padding_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/padding_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/ic_star"
+                android:id="@+id/logImage4"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_toEndOf="@id/logImage4"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rate"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/aboutCard"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp"
+        android:layout_marginStart="@dimen/padding_5dp"
+        android:layout_marginEnd="@dimen/padding_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/padding_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/ic_whatshot"
+                android:id="@+id/logImage6"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_toEndOf="@id/logImage6"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"/>
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/signOut"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp"
+        android:layout_marginStart="@dimen/padding_5dp"
+        android:layout_marginEnd="@dimen/padding_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/padding_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/ic_lock"
+                android:id="@+id/logImage3"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginStart="@dimen/padding_5dp"
+                    android:layout_toEndOf="@id/logImage3"
+                    android:id="@+id/mainTitle"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signout"/>
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+<!--    ADS SECTION-->
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:visibility="gone"
+        android:id="@+id/watchAD"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp"
+        android:layout_marginStart="@dimen/padding_5dp"
+        android:layout_marginEnd="@dimen/padding_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/padding_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/ic_movie_black_24dp"
+                android:id="@+id/logImage9"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_toEndOf="@id/logImage9"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_dev_with_an_ad"/>
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/developer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/developed_by"/>
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

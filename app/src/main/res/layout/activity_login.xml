@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.LoginActivity">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/sign_in_facebook"
+        android:textSize="17sp"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:background="@drawable/main_grad_colors"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"/>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/padding_10dp"
+        android:id="@+id/bgTop"
+        android:background="@drawable/btm_rounded_edge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/padding_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/onboard"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"/>
+
+        <ImageView
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="4dp"
+            android:id="@+id/closeDialog"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/padding_20dp"
+            android:layout_width="32dp"
+            android:layout_centerVertical="true"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_cancel" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_marginTop="-70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:text="@string/welcome"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/login_sub"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="-70dp"
+            app:lottie_enableMergePathsForKitKatAndAbove="true"
+            android:id="@+id/lottie"
+            android:layout_gravity="center"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="dev_desk.json"/>
+
+<!--    <ImageView-->
+<!--        android:layout_marginTop="@dimen/padding_10dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="230dp"-->
+<!--        android:src="@drawable/ic_login_amico"/>-->
+
+
+    <TextView
+        android:layout_marginTop="-50dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/continue_with"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/googleLogin"
+            android:layout_marginEnd="@dimen/padding_10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="3dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="4dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <ImageView
+                android:padding="@dimen/padding_15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_google_icon"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/fbLogin"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="3dp"
+            app:cardBackgroundColor="#3b5998"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:padding="@dimen/padding_15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_facebook_icon"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/padding_15dp"
+            android:layout_marginEnd="@dimen/padding_15dp"
+            android:padding="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tos"/>
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="@string/toc"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_back"
+        android:enabled="true"
+        android:icon="@drawable/ic_backspace_black_24dp"
+        android:title="@string/nav_go_back"/>
+
+    <item
+        android:id="@+id/nav_save"
+        android:enabled="true"
+        android:icon="@drawable/ic_save"
+        android:title="@string/nav_save"/>
+
+    <item
+        android:id="@+id/nav_help"
+        android:enabled="true"
+        android:icon="@drawable/nav_item_help"
+        android:title="@string/nav_help"/>
+
+
+
+
+</menu>

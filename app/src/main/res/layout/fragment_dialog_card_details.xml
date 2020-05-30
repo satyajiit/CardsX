@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.fragments.AddNewCardDialogFragment">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:background="@drawable/main_grad_colors"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"/>
+
+    <RelativeLayout
+        android:layout_below="@id/status_bar_view"
+        android:id="@+id/bgTop"
+        android:background="@drawable/btm_rounded_edge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="4dp"
+            android:id="@+id/closeDialog"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/padding_20dp"
+            android:layout_width="32dp"
+            android:layout_centerVertical="true"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_cancel" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/padding_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/card_details"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/bgTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:paddingBottom="100dp"
+            android:layout_marginStart="@dimen/padding_15dp"
+            android:layout_marginEnd="@dimen/padding_15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mainCard"
+                app:cardCornerRadius="7dp"
+                android:layout_width="match_parent"
+                app:cardElevation="2.5dp"
+                app:cardBackgroundColor="#03A9F4"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="170dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/padding_15dp"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/bankNameTv"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:textSize="21sp"
+                            android:textColor="@color/white"
+                            android:alpha="0.7"
+                            android:textAllCaps="true"
+                            android:text="@string/bank_name"/>
+
+                        <ImageView
+                            android:id="@+id/cardLogo"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="0dp" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/cardNumber"
+                        android:layout_marginTop="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="@string/number_space"/>
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/padding_30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/cardHolderName"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:alpha="0.7"
+                            android:textColor="@color/white"
+                            android:text="@string/cardholder_name"/>
+
+
+                        <TextView
+                            android:id="@+id/cardExpiryTv"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:gravity="end"
+                            android:alpha="0.7"
+                            android:text="@string/mm_yy"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/copyCardOwnerName"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:layout_marginBottom="@dimen/padding_5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cardholder_name"/>
+
+                        <TextView
+                            android:id="@+id/dataCardOwnerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxxx"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/copyCardBankName"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:layout_marginBottom="@dimen/padding_5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bank_name"/>
+
+                        <TextView
+                            android:id="@+id/dataCardBankName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxxx"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/copyCardNumber"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:layout_marginBottom="@dimen/padding_5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_number"/>
+
+                        <TextView
+                            android:id="@+id/dataCardNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxxx"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/copyCardExpiry"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:layout_marginBottom="@dimen/padding_5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_expiry"/>
+
+                        <TextView
+                            android:id="@+id/dataCardExpiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxxx"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/copyCardCVV"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:layout_marginBottom="@dimen/padding_5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_cvv"/>
+
+                        <TextView
+                            android:id="@+id/dataCardCVV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxxx"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/copyCardType"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:layout_marginBottom="@dimen/padding_5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_type"/>
+
+                        <TextView
+                            android:id="@+id/dataCardType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxxx"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:layout_marginBottom="@dimen/padding_5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_added"/>
+
+                        <TextView
+                            android:id="@+id/dataCardAddedON"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxxx"/>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="25dp"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/colorPrimary"
+        android:background="@drawable/bottom_navigation_background"
+        android:elevation="5dp"
+        app:menu="@menu/bottom_navigation_card_details" />
+
+</RelativeLayout>
