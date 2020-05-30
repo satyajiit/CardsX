@@ -37,13 +37,25 @@ Developed for #30DaysOfKotlin 💖
 &nbsp;
 [![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers)
 
-<img src="/Screenshots/1.png" height="512" width="256" />
-<img src="/Screenshots/2.png" height="512" width="256" />&nbsp;<br><br><br>
-<img src="/Screenshots/3.png" height="512" width="256" />
-<img src="/Screenshots/4.png" height="512" width="256" />&nbsp; <br><br><br>
-<img src="/Screenshots/5.png" height="512" width="256"/>
-<img src="/Screenshots/6.png" height="512" width="256" />&nbsp;<br><br><br>
-<img src="/Screenshots/8.png" height="512" width="256" />
+<p float="center"> 
+  <img src="/Screenshots/1.png" height="412" width="412" />
+  <img src="/Screenshots/2.png" height="412" width="412" />
+</p>
+
+<p float="center"> 
+<img src="/Screenshots/3.png" height="412" width="412" />
+<img src="/Screenshots/4.png" height="412" width="412" />
+  </p>
+
+<p float="center"> 
+<img src="/Screenshots/5.png" height="412" width="412"/>
+<img src="/Screenshots/6.png" height="412" width="412" />
+</p>
+
+<p float="center"> 
+<img src="/Screenshots/7.png" height="412" width="412" />
+<img src="/Screenshots/8.png" height="412" width="412" />
+</p>
 
 ### Code Quality : 8/10
 
