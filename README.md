@@ -9,13 +9,14 @@ Developed for #30DaysOfKotlin 💖
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](#)
 
-[![forthebadge](https://forthebadge.com/images/badges/approved-by-george-costanza.svg)](#)
+[![forthebadge](https://forthebadge.com/images/badges/ages-12.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](#)
 
+
+[![forthebadge](https://forthebadge.com/images/badges/approved-by-george-costanza.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](#)
-[![forthebadge](https://forthebadge.com/images/badges/ages-12.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](#)
 
 * An android application for access to all your Credit and Debit Cards , with One time Protection!
