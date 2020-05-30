@@ -1,5 +1,5 @@
 # CardsX
-[![playstore](/Screenshots/playstore.png)](https://play.google.com/store/apps/details?id=com.dyc.youthvibe)
+[![playstore](/Screenshots/playstore.png)](https://play.google.com/store/apps/details?id=com.argonlabs.cardsx)
 
 Developed for #30DaysOfKotlin 💖
 
